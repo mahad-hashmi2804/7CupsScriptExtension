@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Google Doc Viewer",
+  "name": "7 Cups In-room Script Viewer",
   "version": "1.1",
-  "description": "Displays a Google Doc in a Bootstrap offcanvas.",
+  "description": "Chrome based browser extension specifically designed for Discussion Hosts on 7 Cups so they can have their discussion script and the chatroom open in the same tab. The script is opened in a BootStrap OffCanvas that is toggled by a single button in the navbar.",
   "content_scripts": [
     {
       "matches": ["https://www.7cups.com/*"],

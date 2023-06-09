@@ -61,7 +61,7 @@ offcanvas.innerHTML = `
     </div>
 
     <div class="mx-auto">
-    <iframe class="mx-3" src="https://www.bing.com" id="docframe" height="550" width="680" style="border:none;"></iframe>
+    <iframe class="mx-3" src="https://www.bing.com" id="docframe" height="530" width="680" style="border:none;"></iframe>
     </div>
 
   </div>
