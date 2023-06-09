@@ -2,12 +2,12 @@
 
 const button = document.createElement('div');
 button.innerHTML = `
-<button class="btn rounded text-nowrap mx-1 px-md-4 d-none d-md-block btn-light"  type="button" data-bs-toggle="offcanvas" data-bs-target="#myOffcanvas" aria-controls="myOffcanvas">
-  Open Doc
+<button class="btn rounded text-nowrap mx-1 px-md-4 d-none d-md-block btn-light" style="" type="button" data-bs-toggle="offcanvas" data-bs-target="#myOffcanvas" aria-controls="myOffcanvas">
+  Open Script
 </button>
 `;
 
-let train = document.querySelectorAll('[href="/listener/training/courses/"]');
+let train = document.querySelectorAll('[href="/"]');
 let trainA = train[0];
 trainA.after(button);
 
