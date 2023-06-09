@@ -28,7 +28,7 @@ offcanvas.innerHTML = `
 
 
     
-    <div id="card" class="container-fluid card p-3 my-3" style="width:20rem; word-wrap: break-word;">
+    <div id="card" class="container-fluid card p-3 mb-3" style="width:27rem; word-wrap: break-word;">
         <script>
     function processSubmit () {
       console.log("Processing");
@@ -50,12 +50,14 @@ offcanvas.innerHTML = `
   card.after(docframe);
   docframe.reload();
   return false;'>
-    <label for="url" class="form-label fw-semibold">
-                Enter the URL of the Google Doc you want to open.
+    <label for="url" class="form-label fw-semibold" style="text-align: center;">
+                Enter the URL of the Google Doc you want to open. <br>(Make sure to enter the full URL starting from https://)
             </label>
-      <input type="text" autofocus class="mx-4 mb-2 w-auto" id="url" placeholder="e.g. https://doc.google.com/..." required>
-      <div class="col-12 mx-5" style="margin: auto;">
+      <input type="text" autofocus class="mx-4 mb-2" style="width: 325px;" id="url" placeholder="e.g. https://doc.google.com/..." required>
+      <div class="mx-5">
+      <div class="mx-5">
             <button class="btn btn-primary mx-5"" type="submit">Get Page</button>
+            </div>
         </div>
       </form>
     </div>
