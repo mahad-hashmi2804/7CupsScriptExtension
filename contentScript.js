@@ -70,38 +70,8 @@ offcanvas.innerHTML = `
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-`; // Replace with your desired content
-
-// // Add styles to the new div element
-// newDiv.style.position = 'fixed';
-// newDiv.style.top = '0';
-// newDiv.style.left = '0';
-// newDiv.style.width = '100%';
-// newDiv.style.backgroundColor = 'rgba(255, 0, 0, 0.5)'; // Replace with desired background color
-// newDiv.style.color = '#fff'; // Replace with desired text color
-// newDiv.style.padding = '10px';
+`; 
 console.log("Made");
 
 // Append the new div element to the body of the active tab
 document.body.insertBefore(offcanvas, document.body.firstChild);
-
-// Execute the content script when the DOM is fully loaded
-window.addEventListener('DOMContentLoaded', () => {
-  // Create a new div element for the top of all content
-  console.log("Inside");
-  const topDiv = document.createElement('div');
-  topDiv.innerHTML = '<h1>Top Content</h1>'; // Replace with your desired content
-
-  // Add styles to the top div element
-  topDiv.style.position = 'fixed';
-  topDiv.style.top = '0';
-  topDiv.style.left = '0';
-  topDiv.style.width = '100%';
-  topDiv.style.backgroundColor = 'rgba(0, 0, 255, 0.5)'; // Replace with desired background color
-  topDiv.style.color = '#fff'; // Replace with desired text color
-  topDiv.style.padding = '10px';
-  topDiv.style.zIndex = '9999'; // Make it appear on top of other content
-
-  // Append the top div element to the body of the active tab
-  document.body.appendChild(topDiv);
-});
