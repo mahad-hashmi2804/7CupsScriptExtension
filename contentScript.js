@@ -29,32 +29,31 @@ offcanvas.innerHTML = `
 
   <div class="offcanvas offcanvas-start" style="width: 50rem;" tabindex="-1" id="myOffcanvas" aria-labelledby="offcanvasExampleLabel">
 
-  <! This is the header for the offcanvas >
 
+  <! This is the header for the offcanvas >
 
   <div class="offcanvas-header">
     <h5 class="offcanvas-title mx-auto" id="offcanvasExampleLabel" style="text-align: center;">Script Tab</h5>
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
 
+  
   <! Here starts the offcanvas body content. >
-
 
   <div class="offcanvas-body">
 
+    
     <! This is a card that holds the form. >
 
-    
     <div id="card" class="container-fluid card p-3 mb-3" style="width:27rem; word-wrap: break-word;">
         
+      
       <! Here is the form. I wrote the entire JS in the 
       onsubmit because I tried making a function in a script
       tag but it just wasn't working so here we are. >
-
-
+      
       <! The JS basically just takes the value of the url input field, 
       adds it to the source attribute of the iframe and reloads the iframe >
-
 
     <form onsubmit='event.preventDefault(); console.log("Processing");
                     var urlInput = document.getElementById("url");
@@ -65,20 +64,20 @@ offcanvas.innerHTML = `
                     docframe.reload();
                     return false;'>
 
+      
       <! Now here starts the content within the form. >
-
 
       <label for="url" class="form-label fw-semibold" style="text-align: center;">
           Enter the URL of the Google Doc you want to open. <br>(Make sure to enter the full URL starting from https://)
       </label>
 
+      
       <! Text input for the URL >
-
 
       <input type="text" autofocus class="mx-4 mb-2" style="width: 325px;" id="url" placeholder="e.g. https://doc.google.com/..." required>
 
+      
       <! Submit button. Don't ask why it's in 2 divs >
-
 
       <div class="mx-5">
         <div class="mx-5">
@@ -88,11 +87,11 @@ offcanvas.innerHTML = `
       </form>
     </div>
 
+    
     <! Here we have the iframe >
 
-
     <div class="mx-auto">
-    <iframe class="mx-3" src="https://www.bing.com" id="docframe" height="530" width="680" style="border:none;"></iframe>
+    <iframe class="mx-3" src="https://docs.google.com/document/d/1jf7BqGrwkY0zFhU3PKaAaRVCoEd6O2TD0vNhuiRHRD8" id="docframe" height="530" width="680" style="border:none;"></iframe>
     </div>
 
   </div>
@@ -103,3 +102,7 @@ offcanvas.innerHTML = `
 
 // This is just adding the entire offcanvas to the page.
 document.body.insertBefore(offcanvas, document.body.firstChild);
+
+
+// If you know of a better, more readable way to do this, please let me know.
+// Feel free to email me at mahad.python@gmail.com
