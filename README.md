@@ -28,8 +28,8 @@ Here are the steps to instal it:<br>
  In the top left of the page, you should see a "Open Script" button. <br>
  Clicking it will reveal an offcanvas (a sliding tab that can be hidden into the side of your screen).<br>
  In the offcanvas, there should be a input form with one text input box and one button labeled "Get Page". <br>
- There should also be an iframe (a mini web page within your web page) that by default displays the 7 Cups Chat Support FAQ for listeners.<br>
+ There should also be an iframe (a mini web page within your web page) that by default is turned off so as to save memory when not in use.<br>
  To access a script, get the FULL URL of the Google Doc (https://docs.google.com/document/...), and enter the URL into the text input box.<br>
- When you hit the "Get Page" button, it should bring up the required document.<br>
+ When you hit the "Get Page" button, it should bring up the in iframe required document.<br>
  
  If you encounter any bugs or problems, please report them to me at mahad.python@gmail.com as it helps me make this a better and more stable program. Thank you!
