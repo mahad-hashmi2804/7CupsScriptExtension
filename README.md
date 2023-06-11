@@ -14,7 +14,7 @@ You will have to use this extension in developer mode.
 
 Here are the steps to instal it:<br>
   1.) Download ALL of the files: https://github.com/mahad-hashmi2804/7CupsScriptExtension/archive/refs/heads/main.zip<br>
-  !(https://github.com/mahad-hashmi2804/7CupsScriptExtension/blob/main/installation%20steps/step%201.png?raw=true)
+  ![step1](https://github.com/mahad-hashmi2804/7CupsScriptExtension/blob/main/installation%20steps/step%201.png?raw=true)
   2.) Unzip the ZIP file and store all the files in a separate folder containing nothing but these 4 files.<br>
   !(https://github.com/mahad-hashmi2804/7CupsScriptExtension/blob/main/installation%20steps/step%202.png?raw=true)
   !(https://github.com/mahad-hashmi2804/7CupsScriptExtension/blob/main/installation%20steps/step%203.png?raw=true)
