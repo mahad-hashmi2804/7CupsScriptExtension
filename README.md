@@ -25,7 +25,7 @@ Here are the steps to instal it:<br>
   6.) A file explorer window will open. Navigate to the folder you stored the downloaded files in and click "Select folder".<br>
   ![step5](https://github.com/mahad-hashmi2804/7CupsScriptExtension/blob/main/installation%20steps/step%205.png?raw=true)<br>
   ![step6](https://github.com/mahad-hashmi2804/7CupsScriptExtension/blob/main/installation%20steps/step%206.png?raw=true)<br>
-  7.) Voila! Your extension should be installed. Check it out by going to https://www.7cups.com/dashboard<br>
+  7.) Voila! Your extension should be installed. Check it out by going to https://www.7cups.com/chat<br>
   ![step7](https://github.com/mahad-hashmi2804/7CupsScriptExtension/blob/main/installation%20steps/step%207.png?raw=true)<br>
 
 
