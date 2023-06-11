@@ -13,13 +13,20 @@ Since this extension is not on the Chrome Web Store, browsers will not allow thi
 You will have to use this extension in developer mode.
 
 Here are the steps to instal it:<br>
-  1.) Download ALL 4 of the files: https://github.com/mahad-hashmi2804/7CupsScriptExtension/archive/refs/heads/main.zip<br>
+  1.) Download ALL of the files: https://github.com/mahad-hashmi2804/7CupsScriptExtension/archive/refs/heads/main.zip<br>
+  !(https://github.com/mahad-hashmi2804/7CupsScriptExtension/blob/main/installation%20steps/step%201.png?raw=true)
   2.) Unzip the ZIP file and store all the files in a separate folder containing nothing but these 4 files.<br>
+  !(https://github.com/mahad-hashmi2804/7CupsScriptExtension/blob/main/installation%20steps/step%202.png?raw=true)
+  !(https://github.com/mahad-hashmi2804/7CupsScriptExtension/blob/main/installation%20steps/step%203.png?raw=true)
   3.) Open up your browser and go to chrome://extensions<br>
   4.) Flip on the "Developer Mode" switch.<br>
   5.) Click on the button labeled "Load Unpacked"<br>
+  !(https://github.com/mahad-hashmi2804/7CupsScriptExtension/blob/main/installation%20steps/step%204.png?raw=true)
   6.) A file explorer window will open. Navigate to the folder you stored the downloaded files in and click "Select folder".<br>
+  !(https://github.com/mahad-hashmi2804/7CupsScriptExtension/blob/main/installation%20steps/step%205.png?raw=true)
+  !(https://github.com/mahad-hashmi2804/7CupsScriptExtension/blob/main/installation%20steps/step%206.png?raw=true)
   7.) Voila! Your extension should be installed. Check it out by going to https://www.7cups.com/dashboard<br>
+  !(https://github.com/mahad-hashmi2804/7CupsScriptExtension/blob/main/installation%20steps/step%207.png?raw=true)
 
 
  # Usage
