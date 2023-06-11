@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "7 Cups In-room Script Viewer",
   "version": "1.1",
   "description": "Chrome based browser extension specifically designed for Discussion Hosts on 7 Cups so they can have their discussion script and the chatroom open in the same tab. The script is opened in a BootStrap OffCanvas that is toggled by a single button in the navbar.",
@@ -14,7 +14,7 @@
     
     "128": "icon_128.png"
   },
-  "browser_action": {
+  "action": {
     // "default_popup": "popup.html",
     "default_icon": {
       "16": "icon_16.png",
