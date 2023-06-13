@@ -1,17 +1,28 @@
 // contentScript.js
 
 // The button which toggles the offcanvas
-const button = document.createElement('div');
-button.innerHTML = `
+const button1 = document.createElement('div');
+button1.innerHTML = `
 <button class="btn rounded text-nowrap mx-1 px-md-4 d-none d-md-block btn-light" style="" type="button" data-bs-toggle="offcanvas" data-bs-target="#myOffcanvas" aria-controls="myOffcanvas">
   Open Script
 </button>
 `;
 
+const button2 = document.createElement('div');
+button2.innerHTML = `
+<button class="btn rounded text-nowrap mx-1 px-md-4 d-none d-md-block btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#clipOffcanvas" aria-controls="clipOffcanvas">
+  Open Clipboard
+</button>
+`;
+
 // Placing the button right after the "Home" button on the navbar
-let train = document.querySelectorAll('[href="/"]');
-let trainA = train[0];
-trainA.after(button);
+let home = document.querySelectorAll('[href="/"]');
+let homeA = home[0];
+homeA.after(button1);
+
+let notif = document.getElementById('header-notifications');
+
+notif.before(button2);
 
 // The actual offcanvas
 const offcanvas = document.createElement('div');
@@ -31,7 +42,7 @@ offcanvas.innerHTML = `
 <! This is the header for the offcanvas >
 
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title mx-auto" id="clipOffcanvasLabel" style="text-align: center;">Script Tab</h5>
+    <h5 class="offcanvas-title mx-auto" id="clipOffcanvasLabel" style="text-align: center;">Clipboard</h5>
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
 
@@ -39,6 +50,61 @@ offcanvas.innerHTML = `
   <! Here starts the offcanvas body content. >
 
   <div class="offcanvas-body">
+
+    <div class="container-fluid card p-3 mb-3" style="width:27rem; word-wrap: break-word;">
+
+      <form onsubmit="event.preventDefault();
+
+                      let text = document.getElementById('cliptext');
+                      let msg = text.value;
+
+                      console.log('New clipboard entry' + msg);
+
+                      var item = document.createElement('div');
+                      item.class = 'container-fluid card p-3 mb-3';
+
+                      let mid = 'msgBody';
+                      item.onclick = 'let msgBody = document.getElementByName('+ mid +')[0];
+                                      msgBody.value += msg;
+                                      let oc = document.getElementById('+'clipOffcanvas'+');
+                                      oc.hide();';
+                      item.innerHTML = msg;
+
+                      let chil = document.getElementById('chil');
+                      chil.before(item);
+                      
+                      return false;
+                      ">
+
+        <! Now here starts the content within the form. >
+
+        <label for="cliptext" class="form-label fw-semibold" style="text-align: center;">
+            Enter your text.
+        </label>
+
+        
+        <! Text input for the URL >
+
+        <input type="text" autofocus class="mx-4 mb-2" style="width: 325px;" id="cliptext" placeholder="Some text you wanna store" required>
+
+        
+        <! Submit button. Don't ask why it's in 2 divs >
+
+        <div class="mx-5">
+          <div class="mx-5">
+            <button class="btn btn-primary mx-5"" type="submit">Get Page</button>
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+
+    <div class="container-fluid p-3 mb-3">
+
+    <div id="chil"></div>
+
+    </div>
   
   </div>
 
@@ -77,8 +143,7 @@ offcanvas.innerHTML = `
                       var urlInput = document.getElementById("url");
                       var docframe = document.getElementById("docframe");
                       docframe.src = urlInput.value;
-                      var card = document.createElement("card");
-                      card.after(docframe);
+                      
                       docframe.reload();
                       return false;'>
 
