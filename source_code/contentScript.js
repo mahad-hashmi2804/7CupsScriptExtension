@@ -26,6 +26,24 @@ offcanvas.innerHTML = `
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+<div class="offcanvas offcanvas-end" style="width: 30rem;" tabindex="-1" id="clipOffcanvas" aria-labelledby="clipOffcanvasLabel">
+
+<! This is the header for the offcanvas >
+
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title mx-auto" id="clipOffcanvasLabel" style="text-align: center;">Script Tab</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+
+  
+  <! Here starts the offcanvas body content. >
+
+  <div class="offcanvas-body">
+  
+  </div>
+
+</div>
+
 
 <div class="offcanvas offcanvas-start" style="width: 50rem;" tabindex="-1" id="myOffcanvas" aria-labelledby="offcanvasExampleLabel">
 
